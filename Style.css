@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1e78ff 0%, #c3cfe2 100%);
     min-height: 100vh;
     padding: 20px;
@@ -55,4 +55,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
+}
+
+.card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(12,20,30,0.04);
 }
