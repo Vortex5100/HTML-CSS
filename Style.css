@@ -75,7 +75,7 @@ body {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     align-items: start;
 }
@@ -125,6 +125,55 @@ th {
     .education {
         grid-column: span 1;
     }
+}
+
+.circle-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+    padding: 0;
+    justify-items: center;
+}
+
+.circle-list li {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.circle-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.circle-list .overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.circle-list li:hover img {
+    transform: scale(1.1);
+}
+
+.circle-list li:hover .overlay {
+    opacity: 1;
 }
 
 .navbar {
