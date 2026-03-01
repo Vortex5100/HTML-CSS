@@ -42,11 +42,17 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 18px rgba(1,1,1,0.12);
     margin-bottom: 20px;
     transition: transform 0.5s ease;
 }
 
 .profile-img:hover {
     transform: rotate(5deg) scale(1.05);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
 }
