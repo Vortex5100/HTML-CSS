@@ -75,7 +75,7 @@ body {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: start;
 }
@@ -92,8 +92,12 @@ body {
     transform: translateY(-5px);
 }
 
+.about {
+    grid-column: span 2;
+}
+
 .education {
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 table {
